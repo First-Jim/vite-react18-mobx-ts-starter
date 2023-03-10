@@ -1,5 +1,6 @@
 
 # vite-react18-mobx-ts-starter
+
 ## 目录结构
 
 `src`子目录说明
@@ -14,7 +15,6 @@
 - `src/assets`：静态资源目录
 - `src/layouts`：全局通用样式组件
 - `src/styles`：全局通用样式目录
-
 
 `.env` 环境变量配置文件
 `vite.config.ts` 前端构建工具配置文件
