@@ -1,7 +1,7 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 import { RouteObject } from '@/routers/interface';
 import Login from '@/pages/Login';
-import Test from '@/pages/Test';
+
 // * 导入所有router
 const metaRouters = import.meta.glob('./modules/*.tsx', { eager: true });
 
@@ -28,10 +28,6 @@ export const rootRouter: RouteObject[] = [
 			title: '登录页',
 			key: 'login',
 		},
-	},
-	{
-		path: '/test',
-		element: <Test />,
 	},
 	...routerArray,
 	{

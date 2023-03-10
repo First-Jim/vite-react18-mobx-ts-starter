@@ -70,7 +70,7 @@ export const UserInfo = observer(function UserInfo({ type = 'inside' }: Props) {
 	};
 	return (
 		<Dropdown open={state.open} onOpenChange={(open) => state.setOpen(open)} overlay={<Menu items={MenuList} onClick={onClick}></Menu>} placement="bottom">
-			<StyledUserInfo>
+			<StyledUserInfo id="ys_header_user_menu">
 				<div className="username" title={'--'}>
 					{'--'}
 				</div>
