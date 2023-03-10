@@ -10,7 +10,7 @@ const StyledHeader = styled(AntHeader)`
 	display: flex;
 	height: 48px;
 	line-height: 48px;
-	background-color: #185abd;
+	background-color: #000;
 
 	> .left {
 		display: flex;
@@ -77,7 +77,7 @@ export const Header = observer(function Header({ className = '' }: Props) {
 		<StyledHeader className={className}>
 			<div className="left">
 				<div className="logo">
-					<img src={require('@/assets/images/logo.svg')} alt="logo" />
+					<img src={'https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=1600'} alt="logo" />
 				</div>
 			</div>
 			<div className="right">

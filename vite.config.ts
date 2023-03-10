@@ -32,7 +32,7 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 					// modifyVars: {
 					// 	"primary-color": "#1DA57A",
 					// },
-					javascriptEnabled: true,
+					// javascriptEnabled: true,
 					additionalData: `@import "@/styles/var.less";`,
 				},
 			},
