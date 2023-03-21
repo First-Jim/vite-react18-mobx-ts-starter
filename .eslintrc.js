@@ -33,6 +33,7 @@ module.exports = {
 		'plugin:react-hooks/recommended',
 		'prettier',
 		'plugin:prettier/recommended',
+		"plugin:react-hooks/recommended"
 	],
 	/*
 	 * "off" 或 0    ==>  关闭规则

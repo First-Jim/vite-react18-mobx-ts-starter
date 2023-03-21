@@ -8,7 +8,8 @@ import { visualizer } from 'rollup-plugin-visualizer';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import viteCompression from 'vite-plugin-compression';
 import eslintPlugin from 'vite-plugin-eslint';
-
+import gzipPlugin from 'rollup-plugin-gzip';
+import legacy from '@vitejs/plugin-legacy';
 const pathResolve = (dir: string): any => {
 	return resolve(__dirname, dir);
 };
@@ -75,6 +76,10 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 			// * EsLint 报错信息显示在浏览器界面上
 			// eslintPlugin(),
 
+			// * 兼容多版本浏览器
+			legacy({
+				targets: ['> 0.25%', 'last 2 versions and not dead'],
+			}),
 			// * gzip compress
 			viteEnv.VITE_BUILD_GZIP &&
 				viteCompression({
